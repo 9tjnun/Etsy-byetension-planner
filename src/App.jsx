@@ -245,7 +245,29 @@ export default function App() {
   const sectionHeader = ideaHeaders.find((h) => h.toLowerCase().includes("section")) || ideaHeaders.find((h) => h.toLowerCase().includes("หมวด")) || "";
   const titleHeader = ideaHeaders.find((h) => h.toLowerCase().includes("title")) || ideaHeaders.find((h) => h.toLowerCase().includes("idea")) || ideaHeaders.find((h) => h.toLowerCase().includes("ชื่อ")) || ideaHeaders[0] || "";
   const visibleIdeaHeaders = ideaHeaders.slice(0, 8);
-  const ideaSections = Array.from(new Set(ideaRows.map((row) => row[sectionHeader]).filter(Boolean))).sort();
+  const lockedIdeaSections = [
+    "Seasonal Wall Art",
+    "Cottage Garden Wall Art",
+    "Retirement Wall Art",
+    "Travel Window Views",
+    "Animal & Nature Wall Art",
+    "Still Life Wall Art",
+    "Leisure Sports Wall Art",
+    "Custom Retirement",
+  ];
+  const ideaSections = Array.from(
+    new Set([
+      ...lockedIdeaSections,
+      ...ideaRows.map((row) => row[sectionHeader]).filter(Boolean),
+    ])
+  ).sort((a, b) => {
+    const ai = lockedIdeaSections.indexOf(a);
+    const bi = lockedIdeaSections.indexOf(b);
+    if (ai !== -1 && bi !== -1) return ai - bi;
+    if (ai !== -1) return -1;
+    if (bi !== -1) return 1;
+    return a.localeCompare(b);
+  });
   const filteredIdeaRows = ideaRows.filter((row) => {
     const searchText = Object.values(row).join(" ").toLowerCase();
     const matchesSearch = searchText.includes(ideaSearch.toLowerCase());
