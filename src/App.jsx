@@ -19,20 +19,6 @@ const SHEET_CSV_URL =
 
 const quickPrompts = [
   {
-    id: "seo-mockup",
-    title: "SEO + Mockup Prompt",
-    tone: "from-emerald-500 to-teal-500",
-    description: "ใช้หลังสร้างภาพเสร็จแล้ว แนบภาพแล้วกดก็อปคำสั่งนี้",
-    text: `อ่านชีท ByeTension_Simple_Idea_Log_Checkbox ก่อน
-
-ใช้ข้อมูลชีทจากรอบแรกในแชทนี้
-วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเหมาะกับกรอบแบบไหน แล้วอธิบายด้วย
-สร้าง SEO + Mockup Prompt / ส่งเป็น txt แยก 2 ไฟล์ / ห้ามสร้างรูปภาพ
-ห้ามซ้ำแนวเดิมในชีท
-ห้ามอัปเดตชีทจริงอัตโนมัติ
-ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว`,
-  },
-  {
     id: "image-generation",
     title: "Create Image From Idea",
     tone: "from-amber-500 to-orange-500",
@@ -47,45 +33,20 @@ Premium Texture Style:
 visible linen canvas weave under layered oil paint, tactile brush ridges, broken pigment deposits, soft palette-knife-like paint variation without extreme thickness, scumbled highlights, dry-brush texture, thick oil pigment embedded into canvas tooth, natural pigment absorption into linen weave, matte museum finish, soft diffused natural light only, no gloss, no reflections, no digital smoothness, no plastic finish, rich painterly surface, fixed composition, no extra elements, no scene change, centered balanced layout`,
   },
   {
-    id: "video-promo",
-    title: "Create Product Promo Video",
-    tone: "from-sky-500 to-indigo-500",
-    description: "ใช้หลังมี mockup แล้ว เอาไปสร้างวิดีโอโปรโมตสินค้า 10 วิ",
-    text: `Create a 10-second Etsy product promo video using the attached wall art mockup.
+    id: "seo-mockup",
+    title: "SEO + Mockup Prompt",
+    tone: "from-emerald-500 to-teal-500",
+    description: "ใช้หลังสร้างภาพเสร็จแล้ว แนบภาพแล้วกดก็อปคำสั่งนี้",
+    text: `อ่านชีท ByeTension_Simple_Idea_Log_Checkbox ก่อน
 
-Audio:
-Add soft gentle background music throughout the entire video from 0–10 seconds.
-Music style: calm piano, peaceful ambient acoustic, warm cozy instrumental.
-The music must be audible but subtle, relaxing, and premium.
-No voice, no dialogue, no talking.
-Do not remove the background music.
-
-Visual:
-Use slow cinematic movement: gentle zoom in, slight side pan, warm sunlight glow, subtle curtain movement. Keep the framed wall art clear, centered, and the main focus.
-
-Text overlay timing:
-0–3 seconds: “Printable Wall Art”
-3.2–6.5 seconds: “Instant Digital Download”
-6.7–10 seconds: “Available on Etsy”
-
-Important text rules:
-Only show one text phrase at a time.
-Each text phrase must fade in and fade out before the next phrase appears.
-No overlapping text.
-No stacked text.
-No extra captions.
-Place text in the lower third area with clean elegant typography.
-Text must not cover the main artwork.
-
-Style:
-cozy cream interior, warm natural light, peaceful cottage home decor, premium Etsy listing mood, calm slow living atmosphere.
-
-Restrictions:
-No people, no hands, no talking, no dramatic motion, no loud music, no voiceover, no logo, no watermark, no extra objects, no animation inside the framed artwork.
-Keep the scene clean and elegant.`,
+ใช้ข้อมูลชีทจากรอบแรกในแชทนี้
+วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเหมาะกับกรอบแบบไหน แล้วอธิบายด้วย
+สร้าง SEO + Mockup Prompt / ส่งเป็น txt แยก 2 ไฟล์ / ห้ามสร้างรูปภาพ
+ห้ามซ้ำแนวเดิมในชีท
+ห้ามอัปเดตชีทจริงอัตโนมัติ
+ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว`,
   },
 ];
-
 const months = [
   { key: "2026-06", label: "June 2026", short: "Jun", focus: "Summer Seasonal Launch", note: "เริ่ม Seasonal ตั้งแต่เดือนแรก แต่ยังไม่ล็อกภาพจริง", days: 30, startOffset: 1 },
   { key: "2026-07", label: "July 2026", short: "Jul", focus: "Late Summer + Early Fall Prep", note: "ขยับเข้า early fall แบบนุ่ม ๆ", days: 31, startOffset: 3 },
@@ -157,7 +118,51 @@ function getDailyPlan(month, day) {
 function buildPrompt(month, day) {
   const date = getDateKey(month, day);
   const themeList = getDailyPlan(month, day).map((item) => `${item.number}. ${item.section} — ${item.direction}`).join("\n");
-  return `อ่านชีท ByeTension_Simple_Idea_Log_Checkbox ก่อน\n\nวันที่ลง: ${date}\nMonthly Focus: ${month.focus}\n\nธีม 1-5 ที่ต้องใช้รอบนี้:\n${themeList}\n\nขอไอเดีย Wall Art Product Concept Only จำนวน 5 ไอเดีย\nที่คนซื้อมองเห็นแล้วเข้าใจทันทีว่า “อ๋อ ภาพนี้แต่งบ้านสวย” มีเรื่องเล่า และอารมณ์ศิลปิน\n(อ่าน วิเคราะห์ให้เข้าใจ แล้วค่อยค้นหาไอเดียและอธิบายให้ฟัง)\n\nเงื่อนไข:\n1. ห้ามซ้ำ และห้ามใกล้เคียงกับแนวเดิมในชีท ทั้ง subject, mood, scene, object family, composition, View Type, color mood และ shop section pattern\n2. ห้ามคิดต่อยอดจากของเดิมแบบเปลี่ยนของเล็กน้อย ให้คิดเป็น “โลกใหม่” ของภาพจริง ไม่ใช่ variation ของงานเก่า\n3. ต้องใช้ธีม 1-5 ด้านบนให้ครบ โดย 1 ธีม = 1 ไอเดีย และ Best Shop Section ต้องตรงกับ section ของธีมนั้น\n4. ห้ามล็อกภาพตาม planner ล่วงหน้า ให้ GPT คิด subject / scene / object / view type ใหม่หลังอ่านชีทเท่านั้น\n5. ให้ไอเดียทั้ง 5 ภาพหลากหลายมาก ทั้ง subject family, scene family, View Type, orientation, color mood และ composition\n6. ทุกไอเดียต้องเป็น printable wall art ที่ขายบน Etsy ได้จริง เหมาะกับ retirement lifestyle, peaceful home decor, slow living และ calm next chapter\n7. ห้ามทำ SEO, ห้ามทำ mockup prompt, ห้ามสร้างภาพจริง, ห้ามทำไฟล์ดาวน์โหลด\n8. ใน text block ให้ใส่เฉพาะ English image idea prompt สั้น ๆ เท่านั้น ห้ามใส่ Style block หรือ Premium Texture block\n\nฟอร์แมตต่อไอเดีย:\n[เลข] English Idea Title\nหมวดหมู่:\nBest Shop Section:\nประเภทภาพ:\nView Type:\nOrientation:\nColor Mood:\nColor Direction:\nอธิบายภาพภาษาไทย:\nเหตุผลที่ไม่ซ้ำกับชีท:\n\n\`\`\`text\nEnglish short image idea prompt only\n\`\`\``;
+  return `อ่านชีท ByeTension_Simple_Idea_Log_Checkbox ก่อน
+
+วันที่ลง: ${date}
+Monthly Focus: ${month.focus}
+
+Visual Direction รอบนี้:
+ใช้โหมด ByeTension Muted Vintage Landscape Style / NorthPrints vibe แบบปลอดภัย
+เน้น muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, faded cream sky, muted olive, warm beige, soft gray-blue, faded clay accents, quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood.
+ห้ามลอกงาน ร้าน ลิสต์ติ้ง ศิลปิน หรือภาพใดโดยตรง ต้องเป็น fully original ByeTension artwork เท่านั้น.
+
+ธีม 1-5 ที่ต้องใช้รอบนี้:
+${themeList}
+
+ขอไอเดีย Wall Art Product Concept Only จำนวน 5 ไอเดีย
+ที่คนซื้อมองเห็นแล้วเข้าใจทันทีว่า “อ๋อ ภาพนี้แต่งบ้านสวย” มีเรื่องเล่า และอารมณ์ศิลปิน
+(อ่าน วิเคราะห์ให้เข้าใจ แล้วค่อยค้นหาไอเดียและอธิบายให้ฟัง)
+
+เงื่อนไข:
+1. ห้ามซ้ำ และห้ามใกล้เคียงกับแนวเดิมในชีท ทั้ง subject, mood, scene, object family, composition, View Type, color mood และ shop section pattern
+2. ห้ามคิดต่อยอดจากของเดิมแบบเปลี่ยนของเล็กน้อย ให้คิดเป็น “โลกใหม่” ของภาพจริง ไม่ใช่ variation ของงานเก่า
+3. ต้องใช้ธีม 1-5 ด้านบนให้ครบ โดย 1 ธีม = 1 ไอเดีย และ Best Shop Section ต้องตรงกับ section ของธีมนั้น
+4. ห้ามล็อกภาพตาม planner ล่วงหน้า ให้ GPT คิด subject / scene / object / view type ใหม่หลังอ่านชีทเท่านั้น
+5. ให้ไอเดียทั้ง 5 ภาพหลากหลายมาก ทั้ง subject family, scene family, View Type, orientation, color mood และ composition
+6. ทุกไอเดียต้องเป็น printable wall art ที่ขายบน Etsy ได้จริง เหมาะกับ retirement lifestyle, peaceful home decor, slow living และ calm next chapter
+7. ห้ามทำ SEO, ห้ามทำ mockup prompt, ห้ามสร้างภาพจริง, ห้ามทำไฟล์ดาวน์โหลด
+8. ใน text block ให้ใส่เฉพาะ English image idea prompt สั้น ๆ เท่านั้น ห้ามใส่ Style block หรือ Premium Texture block
+9. ทุกไอเดียต้องเข้ากับ Visual Direction รอบนี้ คือ muted vintage, low contrast, antique printable wall art, simple readable subject, open airy composition และต้องยังคงเป็น original ByeTension artwork ไม่ใช่งานเลียนแบบร้านอื่น
+
+ฟอร์แมตต่อไอเดีย:
+[เลข] English Idea Title
+หมวดหมู่:
+Best Shop Section:
+ประเภทภาพ:
+View Type:
+Composition Control Type:
+Orientation:
+Color Mood:
+Color Direction:
+Visual Direction:
+อธิบายภาพภาษาไทย:
+เหตุผลที่ไม่ซ้ำกับชีท:
+
+\`\`\`text
+English short image idea prompt only
+\`\`\``;
 }
 function countSectionsForMonth(month) {
   const counts = Object.fromEntries(sections.map((s) => [s, 0]));
@@ -332,7 +337,7 @@ function PlannerTab({ month, monthIndex, setMonthIndex, selectedDay, setSelected
       </section>
 
 
-      <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+      <section className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         {quickPrompts.map((prompt) => (
           <div key={prompt.id} className="overflow-hidden rounded-[2rem] border border-white/80 bg-white/90 shadow-lg backdrop-blur">
             <div className={`h-2 bg-gradient-to-r ${prompt.tone}`} />
@@ -398,7 +403,7 @@ function IdeaLogTab({ ideaRows, ideaLoading, ideaError, ideaSearch, setIdeaSearc
 
 function PromptLibraryTab({ quickCopied, copyQuickPrompt }) {
   return (
-    <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+    <section className="grid grid-cols-1 gap-5 lg:grid-cols-2">
       {quickPrompts.map((prompt) => <div key={prompt.id} className="overflow-hidden rounded-[2rem] border border-white/80 bg-white/90 shadow-xl backdrop-blur"><div className={`h-2 bg-gradient-to-r ${prompt.tone}`} /><div className="p-5"><div className="flex items-start justify-between gap-4"><div><div className="text-sm text-stone-500">Quick Copy Command</div><h3 className="mt-1 text-xl font-semibold">{prompt.title}</h3><p className="mt-1 text-sm text-stone-600">{prompt.description}</p></div><button onClick={() => copyQuickPrompt(prompt)} className={`shrink-0 rounded-2xl px-4 py-3 text-sm font-bold ${quickCopied === prompt.id ? "bg-emerald-600 text-white" : `bg-gradient-to-r ${prompt.tone} text-white hover:opacity-90`}`}>{quickCopied === prompt.id ? "Copied" : "Copy"}</button></div><div className="mt-4 max-h-[460px] overflow-auto whitespace-pre-wrap rounded-2xl border border-stone-200 bg-stone-50 p-4 text-xs leading-relaxed text-stone-700">{prompt.text}</div></div></div>)}
     </section>
   );
