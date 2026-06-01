@@ -5,3 +5,4 @@ Two-tab version:
 2. Idea Log
 
 React + Vite + Tailwind.
+Updated deployment trigger.
