@@ -40,11 +40,34 @@ visible linen canvas weave under layered oil paint, tactile brush ridges, broken
     text: `อ่านชีท ByeTension_Simple_Idea_Log_Checkbox ก่อน
 
 ใช้ข้อมูลชีทจากรอบแรกในแชทนี้
-วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเหมาะกับกรอบแบบไหน แล้วอธิบายด้วย
+
+ก่อนสร้างงาน ต้องเช็ก Product Code ในชีทก่อนทุกครั้ง:
+- อ่านคอลัมน์ Product Code / Shop Section / Artwork Name / SEO Status / Mockup Status
+- วิเคราะห์ภาพก่อนว่าเป็นภาพอะไร แล้วเลือก Best Shop Section จาก 8 section ของ ByeTension เท่านั้น
+- ใช้รหัสตามหมวด:
+RET = Retirement Wall Art
+TRV = Travel Window Views
+CUS = Custom Retirement
+ANM = Animal & Nature Wall Art
+STL = Still Life Wall Art
+GDN = Cottage Garden Wall Art
+SPT = Leisure Sports Wall Art
+SEA = Seasonal Wall Art
+- เช็กเลขล่าสุดของ section นั้นในชีท แล้วใช้เลขถัดไปที่ยังไม่เคยใช้ เช่น GDN-04 → GDN-05
+- ห้ามใช้ Product Code ซ้ำเด็ดขาด
+- ห้ามเดาเลขจากความจำ ถ้าอ่านเลขล่าสุดไม่ได้หรือไม่มั่นใจ ให้หยุดและบอกให้ยืนยัน Product Code ก่อน
+- ใส่ Product Code ในชื่อไฟล์เนม, ชื่อไฟล์ SEO txt, ชื่อไฟล์ Mockup txt และ Sheet Log Note
+- ห้ามใส่ Product Code ใน Etsy title ลูกค้าเห็น เว้นแต่สั่งชัดเจน
+
+วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเหมาะกับกรอบแบบไหน แล้วอธิบายสั้น ๆ
+
 สร้าง SEO + Mockup Prompt / ส่งเป็น txt แยก 2 ไฟล์ / ห้ามสร้างรูปภาพ
-ห้ามซ้ำแนวเดิมในชีท
+
+ห้ามซ้ำแนวเดิมในชีท ทั้ง subject, mood, scene, object family, composition, View Type, Composition Control Type, color mood, shop section pattern, Product Code, mockup room type, frame family, wall/background, display type และ light/shadow pattern
+
 ห้ามอัปเดตชีทจริงอัตโนมัติ
-ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว`,
+ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว
+`,
   },
 ];
 const months = [
