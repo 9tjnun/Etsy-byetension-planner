@@ -69,6 +69,57 @@ SEA = Seasonal Wall Art
 ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว
 `,
   },
+  {
+    id: "update-sheet",
+    title: "Update Idea Log Sheet",
+    tone: "from-sky-500 to-indigo-500",
+    description: "ใช้หลังทำ SEO + Mockup เสร็จแล้ว เพื่ออัปเดตชีทออนไลน์ให้ปลอดภัย",
+    text: `อัปเดตชีท ByeTension_Simple_Idea_Log_Checkbox ออนไลน์เท่านั้น
+
+ก่อนอัปเดตต้องทำตามนี้:
+1. อ่านชีทจริงจาก Google Sheets ก่อนทุกครั้ง
+2. เช็ก tab ที่ต้องอัปเดต: Idea Log
+3. อ่าน header row และจับคู่คอลัมน์ให้ถูกต้อง ห้ามเดาจากความจำ
+4. เช็ก Product Code ทั้งหมดในชีทก่อน โดยเฉพาะคอลัมน์ Product Code / Shop Section / Artwork Name / SEO Status / Mockup Status
+5. หาแถวว่างจริงถัดไปจากรายการล่าสุดเท่านั้น ห้ามใช้ rowIndex เดาเอง ห้ามเขียนทับแถวเดิม ห้ามแทรกในแถวว่างกลางตารางถ้าไม่ใช่แถวถัดไปของ log ล่าสุด
+6. ถ้าเจอแถวที่มีข้อความกันซ้ำยาว ๆ หรือแถวสูงผิดปกติ แต่ข้อมูลคอลัมน์หลักไม่ครบ ให้ถือว่าเป็นแถวผิดพลาด/ห้ามใช้ จนกว่าจะยืนยัน
+7. ถ้าไม่มั่นใจว่าแถวว่างถัดไปคือแถวไหน ให้หยุดและถามฉันก่อน ห้ามอัปเดตเอง
+
+ข้อมูลที่ต้องเพิ่ม:
+- เสร็จแล้ว ✓ = ☑
+- No. = เลขถัดไปจากรายการล่าสุดจริง
+- Idea Title = [ใส่ชื่อภาพ]
+- แนวภาพ = [สรุป subject / scene / object family]
+- โทน/บรรยากาศ = [Color Mood + color direction]
+- อัตราส่วน = [Portrait 4x6 หรือ Landscape 6x4]
+- สถานะ = Created
+- หมายเหตุกันซ้ำ = [เขียน subject/mood/scene/object family/view type ที่ต้องห้ามซ้ำ]
+- SEO Done = ☑
+- SEO File Name = [Product Code + Artwork Name + WallArt]
+- Shop Section = [เลือกจาก 8 section เท่านั้น]
+- Product Code = [รหัสที่เช็กแล้วว่าไม่ซ้ำ เช่น GDN-04]
+- Visual Direction = [สรุป visual direction สั้น ๆ]
+- View Type = [View Type ของ artwork]
+- Composition Control Type = [Composition Control Type]
+- Mockup Status = Prompt Done
+- Mockup System Version = 10 Image Current Real Home Rooms
+- Mockup 1 Hero Frame = [frame ที่ใช้]
+- Mockup 2 Room Type = [room type ที่ใช้]
+- Mockup 8 Display Type = [display type ที่ใช้]
+- Mockup 9 Room Type = [room type ที่ใช้]
+- Frame Families Used = [frame families]
+- Wall / Background Used = [wall/background]
+- Light / Shadow Used = [light/shadow]
+- Avoid Next Time = [สิ่งที่ต้องเลี่ยงรอบหน้า]
+- Notes = SEO + Mockup Prompt Done [วันที่]
+
+กฎสำคัญ:
+- ห้ามใช้ Product Code ซ้ำเด็ดขาด
+- ห้ามอัปเดตผิดแถว
+- ห้ามใส่ข้อมูลลงแถวสูงผิดปกติ/แถวโน้ต/แถวผิดรูปแบบ
+- ห้ามอัปเดต Mockup Log เว้นแต่ฉันสั่งชัดเจน
+- หลังอัปเดตเสร็จ ให้บอก Product Code ที่เพิ่ม และบอกว่าเพิ่มไว้ที่แถวไหนของ Idea Log`,
+  },
 ];
 const months = [
   { key: "2026-06", label: "June 2026", short: "Jun", focus: "Summer Seasonal Launch", note: "เริ่ม Seasonal ตั้งแต่เดือนแรก แต่ยังไม่ล็อกภาพจริง", days: 30, startOffset: 1 },
@@ -360,7 +411,7 @@ function PlannerTab({ month, monthIndex, setMonthIndex, selectedDay, setSelected
       </section>
 
 
-      <section className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+      <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
         {quickPrompts.map((prompt) => (
           <div key={prompt.id} className="overflow-hidden rounded-[2rem] border border-white/80 bg-white/90 shadow-lg backdrop-blur">
             <div className={`h-2 bg-gradient-to-r ${prompt.tone}`} />
@@ -426,7 +477,7 @@ function IdeaLogTab({ ideaRows, ideaLoading, ideaError, ideaSearch, setIdeaSearc
 
 function PromptLibraryTab({ quickCopied, copyQuickPrompt }) {
   return (
-    <section className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+    <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
       {quickPrompts.map((prompt) => <div key={prompt.id} className="overflow-hidden rounded-[2rem] border border-white/80 bg-white/90 shadow-xl backdrop-blur"><div className={`h-2 bg-gradient-to-r ${prompt.tone}`} /><div className="p-5"><div className="flex items-start justify-between gap-4"><div><div className="text-sm text-stone-500">Quick Copy Command</div><h3 className="mt-1 text-xl font-semibold">{prompt.title}</h3><p className="mt-1 text-sm text-stone-600">{prompt.description}</p></div><button onClick={() => copyQuickPrompt(prompt)} className={`shrink-0 rounded-2xl px-4 py-3 text-sm font-bold ${quickCopied === prompt.id ? "bg-emerald-600 text-white" : `bg-gradient-to-r ${prompt.tone} text-white hover:opacity-90`}`}>{quickCopied === prompt.id ? "Copied" : "Copy"}</button></div><div className="mt-4 max-h-[460px] overflow-auto whitespace-pre-wrap rounded-2xl border border-stone-200 bg-stone-50 p-4 text-xs leading-relaxed text-stone-700">{prompt.text}</div></div></div>)}
     </section>
   );
