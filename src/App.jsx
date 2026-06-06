@@ -23,7 +23,7 @@ const quickPrompts = [
     title: "Create Image From Idea",
     tone: "from-amber-500 to-orange-500",
     description: "ใช้หลังเลือกไอเดียแล้ว เอา prompt สั้นจากไอเดียมาใส่ในวงเล็บ",
-    text: `สร้างภาพจากไอเดีย : ( ) 
+    text: `สร้างภาพจากไอเดีย : ([วาง English short image idea prompt here])
 ได้เลย (ไม่ต้องคุยอะไรกัน)
 
 ยึดตามไอเดียทุกอย่าง ทั้ง subject, place / memory layer, story hint, mood, orientation, color mood, color direction และ composition control type
@@ -32,7 +32,6 @@ const quickPrompts = [
 - Portrait 3:4 ถ้าไอเดียระบุ Portrait
 - Landscape 4:3 ถ้าไอเดียระบุ Landscape
 
-Artwork Language:
 Create the image as original ByeTension printable wall art for international Etsy buyers and Western home decor buyers.
 The artwork must feel like a quiet painted memory, not a product-style object study.
 Prioritize place-led / memory-led composition.
@@ -42,63 +41,60 @@ If an object appears, keep it readable but not oversized. The object must suppor
 The image should look beautiful framed in a Western home, cottage home, lake house, hallway, bedroom, reading nook, cozy office, or peaceful retirement home.
 
 Visual Language:
-Use ByeTension Muted Vintage Landscape Style — muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, pale neutral cream balanced with soft gray-blue undertones, muted olive, muted sage, faded olive, taupe stone depth, neutral stone gray, cool cream highlights, and faded clay or dusty peach accents used sparingly only when suitable.
-The artwork must feel like balanced muted vintage, not yellow vintage.
-Keep a quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood, and original ByeTension painted memory feeling.
+Use ByeTension Muted Vintage Landscape Style — muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood, and original ByeTension painted memory feeling.
 NorthPrints-inspired market direction only as broad buyer-facing learning, but fully original ByeTension artwork. Do not copy any existing shop, listing, artist, artwork, product photo, frame layout, title, brand identity, or composition.
+
+Balanced Muted Vintage Color Control:
+Use a balanced muted vintage oil painting palette, not yellow vintage.
+Use pale neutral cream balanced with soft gray-blue undertones, muted sage shadows, faded olive, taupe stone depth, neutral stone gray, pale blue-gray, and cool cream highlights.
+Warm ivory, weathered beige, faded clay, dusty peach, soft sunlight, or antique warmth may appear only as restrained accents, not as an all-over color cast.
+Keep yellow saturation low.
+Do not let the final artwork become yellow-dominant, orange, sepia, mustard, overly golden, or covered by an all-over beige/yellow wash.
+Old-world but not old-photo yellow. Antique but not sepia. Warm but not yellow-dominant. Muted but not muddy. Cream but not all-over beige.
+If the scene contains warm walls, warm sky, wheat, sand, dry grass, warm stone, warm wood, sunset light, golden field, cream fabric, beige objects, or pale flowers, strengthen the gray-blue, sage, taupe, stone gray, pale blue-gray, or cool cream balance.
+Never allow all major planes to become warm at the same time. If the sky, wall, field, path, floor, curtain, stone, wood, fabric, or light is warm, balance at least two other major areas with soft gray-blue, muted sage, faded olive, taupe, neutral stone gray, pale blue-gray, or cool cream.
+
+Style:
+Use ByeTension’s fixed signature heirloom oil painting style for all artworks, so every piece looks cohesive and clearly painted by the same artist.
+Soft classic oil painting, restrained impressionist brushwork, softly visible brushstrokes, layered matte oil paint surface, delicate broken color, scumbled light, gentle dry-brush texture, painterly lost-and-found edges, softly blurred atmospheric edges, softened distant forms, diffused secondary details, soft atmospheric blending, rich but muted color mixing, hand-painted surface variation, refined old-world painterly realism, soft natural light, airy peaceful atmosphere, calm decor-friendly composition, elegant retirement lifestyle mood, premium printable wall art, realistic proportions, believable real-world scene.
+The artwork should feel like a softly aged oil painting, not a sharp digital render or a photo painted over with texture.
+Not photorealistic, not digital smooth, not glossy, not plastic, not overly clean AI rendering, not hyper-detailed, not hard-edged, not dark, not muddy, not cartoon, not watercolor, not flat illustration.
+
+Soft Painted Atmosphere Control:
+The artwork should feel like a softly aged old-world oil painting, not a sharp digital render.
+Keep the main subject readable for Etsy thumbnail clarity, but make secondary and distant elements softer, more atmospheric, and less defined.
+Use gentle atmospheric blur, softened distant details, painterly lost-and-found edges, softened transitions, muted value shifts, diffused background forms, and soft old-world painted memory feeling.
+Let distant trees, sky, water, fields, walls, garden edges, curtains, roads, hills, hedgerows, window views, and background elements softly dissolve into the atmosphere like an old-world painted memory.
+Readable but not sharp. Painterly but not messy. Softly refined, not digitally crisp.
+Never allow every leaf, blade of grass, stone, flower, branch, wall texture, water ripple, window edge, or background object to be equally clear.
+The final image should have a natural visual hierarchy: readable subject, soft supporting context, and atmospheric distance.
 
 Composition:
 centered balanced layout, crop-safe composition, generous safe margins, open airy atmosphere, visible depth, quiet place context, subtle story hint, important details away from edges, suitable for multi-size printable wall art cropping, clear Etsy thumbnail readability within 1 second.
 The artwork must feel airy but not empty. Include enough place, depth, light, weather, season, or trace of life to feel emotionally finished.
-Keep the main subject clear and readable, but avoid oversized foreground objects, crowded tabletop scenes, product-photo framing, or isolated objects on blank backgrounds.
-Never allow all major planes to become warm at the same time. If the sky, wall, field, path, floor, curtain, stone, or light is warm, balance at least two other major areas with soft gray-blue, muted sage, faded olive, taupe, neutral stone gray, or cool cream.
-
-Style:
-Use ByeTension’s fixed signature heirloom oil painting style for all artworks, so every piece looks cohesive and clearly painted by the same artist.
-Soft classic oil painting, restrained impressionist brushwork, soft visible brushstrokes, layered matte oil paint surface, delicate broken color, scumbled light, dry-brush texture, painterly lost-and-found edges, softly blurred atmospheric edges, soft atmospheric blending, rich but muted color mixing, hand-painted surface variation, refined old-world painterly realism, soft natural light, airy peaceful atmosphere, calm decor-friendly composition, elegant retirement lifestyle mood, premium printable wall art, realistic proportions, believable real-world scene.
-Not photorealistic, not digital smooth, not glossy, not plastic, not overly clean AI rendering, not dark, not muddy, not cartoon, not watercolor, not flat illustration.
+Keep the main subject clear and readable, but avoid oversized foreground objects, crowded tabletop scenes, product-photo framing, isolated objects on blank backgrounds, or empty horizon with no anchor.
+The main subject may be the clearest area, but secondary and distant elements must be softer, more atmospheric, and less defined.
+Never allow every part of the image to have equal sharpness, equal contrast, or equal detail.
 
 Premium Texture Style:
 visible linen canvas weave under soft layered oil paint, subtle paint ridges, restrained broken pigment deposits, gentle dry-brush texture, soft scumbled highlights, natural pigment absorption into linen weave, matte museum finish, soft diffused natural light only, no gloss, no reflections, no digital smoothness, no plastic finish, quiet premium painterly surface, fixed composition, no extra elements, no scene change, centered balanced layout.
-
-Color Control:
-Use a balanced muted vintage neutral oil painting palette.
-Keep pale neutral cream balanced with soft gray-blue undertones, muted sage shadows, faded olive, taupe stone depth, neutral stone gray, and cool cream highlights.
-Warm ivory, weathered beige, faded clay, dusty peach, soft sunlight, or antique warmth may appear only as restrained warm accents, not as an all-over color cast.
-Keep yellow saturation low.
-Do not let the final artwork become yellow-dominant, orange, sepia, mustard, overly golden, or covered by an all-over beige/yellow wash.
-If the scene contains warm walls, warm sky, wheat, sand, dry grass, warm stone, warm wood, sunset light, golden field, cream fabric, or beige objects, strengthen the gray-blue, sage, taupe, stone gray, or cool cream balance.
-Preserve a soft antique oil painting mood, airy low contrast, matte linen texture, and premium heirloom wall art feeling.
-
-Color Cast Control:
-Keep the artwork in ByeTension’s muted vintage old-world painted memory style, but do not apply an overall yellow, sepia, mustard, orange, or beige filter.
-Balance warm neutral tones with soft gray-blue undertones, muted sage shadows, faded olive, taupe stone depth, neutral gray, and cool cream highlights.
-Keep yellow saturation low.
-The final artwork should feel like a balanced antique oil painting, not a yellowed old photo.
-Old-world but not old-photo yellow. Antique but not sepia. Warm but not yellow-dominant. Muted but not muddy. Cream but not all-over beige.
+The texture must feel integrated into the painting, not like a digital photo with a canvas filter placed on top.
 
 Structural Realism Lock:
 Keep the artwork painterly, hand-painted, and clearly in ByeTension’s oil painting style, not photorealistic. However, all architecture, furniture, and functional objects must be structurally and physically believable.
-Doors, windows, knobs, hinges, handles, benches, chairs, tables, shelves, cabinets, stairs, railings, floor lines, wall planes, garden gates, fences, ledges, and perspective must be constructed correctly in real-world space.
+Doors, windows, knobs, hinges, handles, benches, chairs, tables, shelves, cabinets, stairs, railings, floor lines, wall planes, garden gates, fences, ledges, paths, roads, stone walls, roofs, frames, and perspective must be constructed correctly in real-world space.
 Preserve painterly softness, muted vintage blur, and artistic brushwork, but do not allow impossible object construction, floating hardware, warped furniture, broken architectural logic, melted objects, or distorted small functional details.
 Soft painterly edges are allowed, but functional objects must not melt, merge, deform, float, disconnect, duplicate, or lose their real-world construction.
-Door hardware must attach to the correct latch side of the door at a natural hand height. Hinges must appear on the correct hinge side when visible. Door panels, window frames, bench legs, table legs, chair legs, shelves, and floor perspective must align naturally.
+Door hardware must attach to the correct latch side of the door at a natural hand height.
+Hinges must appear on the correct hinge side when visible.
+Door panels, window frames, bench legs, table legs, chair legs, shelves, fence posts, garden gates, and floor perspective must align naturally.
 If any hardware or structural detail becomes uncertain, simplify it into one clean realistic detail or partially obscure it instead of inventing a distorted form.
 
 Reality Check Before Final Image:
-Before finalizing the image, check that the scene still makes physical sense:
-- doors can actually open
-- knobs and handles attach correctly
-- furniture can stand and support weight
-- windows, frames, hinges, and panels align naturally
-- perspective lines feel believable
-- small functional details are simplified rather than distorted
-- painterly blur does not turn real objects into melted AI shapes
-- the image does not have an all-over yellow, sepia, orange, mustard, or beige cast
-- warm areas are balanced with soft gray-blue, muted sage, faded olive, taupe, neutral gray, or cool cream
+Before finalizing the image, check that the scene still makes physical sense, doors can actually open, knobs and handles attach correctly, furniture can stand and support weight, windows / frames / hinges / panels align naturally, perspective lines feel believable, small functional details are simplified rather than distorted, painterly blur does not turn real objects into melted AI shapes, the image does not have an all-over yellow / sepia / orange / mustard / beige cast, warm areas are balanced with soft gray-blue / muted sage / faded olive / taupe / neutral gray / pale blue-gray / cool cream, the image does not look like a sharp digital render with paint texture added on top, secondary and distant areas are softer than the main subject, the artwork has painterly atmospheric softness rather than uniform digital sharpness, and the main subject is readable while background and secondary details are not over-defined.
 
 Strict Avoid:
-no people unless the idea clearly requires them, no text, no logo, no watermark, no brand names, no readable signs, no famous landmarks, no exact city skylines, no copied composition, no copied shop style, no product photography, no oversized foreground object, no isolated object on blank background, no cluttered tabletop catalog scene, no heavy yellow cast, no sepia filter, no orange tint, no mustard tone, no all-over beige wash, no overly golden haze, no yellowed old photo look, no glossy digital look, no plastic finish, no floating door knobs, no incorrect hinges, no impossible furniture legs, no warped architecture, no broken perspective, no melted hardware, no melted furniture, no deformed windows, no distorted shelves, no physically impossible objects.`,
+no people unless the idea clearly requires them / no text / no logo / no watermark / no brand names / no readable signs / no famous landmarks / no exact city skylines / no copied composition / no copied shop style / no product photography / no oversized foreground object / no isolated object on blank background / no cluttered tabletop catalog scene / no heavy yellow cast / no sepia filter / no orange tint / no mustard tone / no all-over beige wash / no overly golden haze / no yellowed old photo look / no glossy digital look / no plastic finish / no photorealistic sharpness / no hyper-sharp digital detail / no hard AI outlines / no every-detail-in-focus look / no over-defined leaves / no over-defined grass / no over-defined stone texture / no over-defined flower petals / no over-defined wall texture / no over-defined background details / no paint-over-photo effect / no synthetic crispness / no uniformly sharp foreground and background / no digital illustration sharpness / no AI-rendered clarity / no floating door knobs / no incorrect hinges / no impossible furniture legs / no warped architecture / no broken perspective / no melted hardware / no melted furniture / no deformed windows / no distorted shelves / no physically impossible objects.`,
   },
   {
     id: "seo-mockup",
@@ -534,7 +530,7 @@ function PlannerTab({ month, monthIndex, setMonthIndex, selectedDay, setSelected
             {calendarDays.map((day) => {
               if (!dayVisible(day)) return null;
               const key = getDateKey(month, day); const isDone = !!done[key]; const isSelected = day === selectedDay;
-              return <button key={key} onClick={() => setSelectedDay(day)} className={`min-h-28 rounded-2xl border p-2 text-left shadow-sm transition ${isSelected ? "border-orange-500 ring-2 ring-orange-400" : "border-stone-200"} ${isDone ? "bg-emerald-50" : "bg-white hover:bg-amber-50"}`}><div className="flex items-center justify-between"><span className="font-bold">{day}</span>{isDone ? <CheckCircle2 className="h-4 w-4 text-emerald-600" /> : <span className="h-4 w-4 rounded-full border border-stone-300" />}</div><div className="mt-2 space-y-1">{getDailyPlan(month, day).slice(0, 3).map((p) => <div key={`${key}-${p.number}`} className={`h-1.5 rounded-full border ${sectionStyle[p.section]}`} />)}<div className="pt-1 text-[10px] text-stone-500">5 theme slots</div></div></button>;
+              return <button key={key} onClick={() => setSelectedDay(day)} className={`min-h-28 rounded-2xl border-2 p-2 text-left shadow-sm transition ${isSelected ? "border-teal-700 ring-2 ring-teal-400" : isDone ? "border-emerald-700" : "border-stone-300"} ${isDone ? "bg-emerald-100 shadow-md ring-1 ring-emerald-300" : "bg-white hover:border-emerald-500 hover:bg-emerald-50"}`}><div className="flex items-center justify-between"><span className={`font-bold ${isDone ? "text-emerald-950" : "text-stone-900"}`}>{day}</span>{isDone ? <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-700 text-white"><CheckCircle2 className="h-4 w-4" /></span> : <span className="h-5 w-5 rounded-full border-2 border-stone-400 bg-white" />}</div><div className="mt-2 space-y-1">{getDailyPlan(month, day).slice(0, 3).map((p) => <div key={`${key}-${p.number}`} className={`h-1.5 rounded-full border ${isDone ? "border-emerald-700 bg-emerald-700" : "border-stone-400 bg-stone-400"}`} />)}<div className={`pt-1 text-[10px] font-semibold ${isDone ? "text-emerald-900" : "text-stone-600"}`}>5 theme slots</div></div></button>;
             })}
           </div>
         </div>
