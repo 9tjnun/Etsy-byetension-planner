@@ -23,7 +23,7 @@ const quickPrompts = [
     title: "Create Image From Idea",
     tone: "from-amber-500 to-orange-500",
     description: "ใช้หลังเลือกไอเดียแล้ว เอา prompt สั้นจากไอเดียมาใส่ในวงเล็บ",
-    text: `สร้างภาพจากไอเดีย : ( )
+    text: `สร้างภาพจากไอเดีย : ([วาง English short image idea prompt here])
 ได้เลย (ไม่ต้องคุยอะไรกัน)
 
 ยึดตามไอเดียทุกอย่าง ทั้ง subject, place / memory layer, story hint, mood, orientation, color mood, color direction และ composition control type
@@ -37,27 +37,54 @@ Create the image as original ByeTension printable wall art for international Ets
 The artwork must feel like a quiet painted memory, not a product-style object study.
 Prioritize place-led / memory-led composition.
 For scenic, garden, travel, seasonal, and retirement concepts, aim for 70–85% place / atmosphere / view and 15–30% subject / story hint.
+For still life, hobby, pet, and object-led concepts, the object or activity may be readable, but it must still be supported by place, light, weather, depth, and memory context.
 If an object appears, keep it readable but not oversized. The object must support the memory, not overpower the place.
 The image should look beautiful framed in a Western home, cottage home, lake house, hallway, bedroom, reading nook, cozy office, or peaceful retirement home.
 
 Visual Language:
-Use ByeTension Muted Vintage Landscape Style — muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, faded cream sky, muted olive, warm beige, soft gray-blue or faded clay accents, quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood.
-NorthPrints-inspired market direction but fully original ByeTension artwork, not copying any existing shop, listing, artist, artwork, product photo, or composition.
+Use ByeTension Muted Vintage Landscape Style — muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, faded cream sky or soft pale natural light, muted olive, warm beige, soft gray-blue, faded sage, weathered taupe, faded clay accents, quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood.
+NorthPrints-inspired market direction only as broad buyer-facing learning, but fully original ByeTension artwork. Do not copy any existing shop, listing, artist, artwork, product photo, frame layout, title, brand identity, or composition.
 
 Composition:
 centered balanced layout, crop-safe composition, generous safe margins, open airy atmosphere, visible depth, quiet place context, subtle story hint, important details away from edges, suitable for multi-size printable wall art cropping, clear Etsy thumbnail readability within 1 second.
+The artwork must feel airy but not empty. Include enough place, depth, light, weather, season, or trace of life to feel emotionally finished.
+Keep the main subject clear and readable, but avoid oversized foreground objects, crowded tabletop scenes, product-photo framing, or isolated objects on blank backgrounds.
 
 Style:
-Use ByeTension’s fixed signature heirloom oil painting style for all artworks, so every piece looks cohesive and clearly painted by the same artist. soft classic oil painting, restrained impressionist brushwork, soft visible brushstrokes, layered matte oil paint surface, delicate broken color, scumbled light, dry-brush texture, painterly lost-and-found edges, soft atmospheric blending, rich but muted color mixing, hand-painted surface variation, refined old-world painterly realism, warm natural light, airy peaceful atmosphere, calm decor-friendly composition, elegant retirement lifestyle mood, premium printable wall art, realistic proportions, believable real-world scene, not photorealistic, not digital smooth, not glossy, not plastic, not overly clean AI rendering, not dark, not muddy, not cartoon, not watercolor, not flat illustration.
+Use ByeTension’s fixed signature heirloom oil painting style for all artworks, so every piece looks cohesive and clearly painted by the same artist.
+Soft classic oil painting, restrained impressionist brushwork, soft visible brushstrokes, layered matte oil paint surface, delicate broken color, scumbled light, dry-brush texture, painterly lost-and-found edges, softly blurred atmospheric edges, soft atmospheric blending, rich but muted color mixing, hand-painted surface variation, refined old-world painterly realism, warm natural light, airy peaceful atmosphere, calm decor-friendly composition, elegant retirement lifestyle mood, premium printable wall art, realistic proportions, believable real-world scene.
+Not photorealistic, not digital smooth, not glossy, not plastic, not overly clean AI rendering, not dark, not muddy, not cartoon, not watercolor, not flat illustration.
 
 Premium Texture Style:
 visible linen canvas weave under soft layered oil paint, subtle paint ridges, restrained broken pigment deposits, gentle dry-brush texture, soft scumbled highlights, natural pigment absorption into linen weave, matte museum finish, soft diffused natural light only, no gloss, no reflections, no digital smoothness, no plastic finish, quiet premium painterly surface, fixed composition, no extra elements, no scene change, centered balanced layout.
 
+Color Control:
+Use a muted vintage neutral oil painting palette.
+Keep warm cream balanced with soft gray-blue, muted sage, faded olive, cool cream shadows, taupe, or neutral stone-gray depth.
+Keep yellow saturation low.
+Warm light is allowed, but the final artwork must not become yellow-dominant, orange, sepia, mustard, or overly golden.
+Preserve a soft antique oil painting mood, airy low contrast, matte linen texture, and premium heirloom wall art feeling.
+
 Structural Realism Lock:
-Keep the artwork painterly, hand-painted, and clearly in ByeTension’s oil painting style, not photorealistic. However, all architecture, furniture, and functional objects must be structurally and physically believable. Doors, windows, knobs, hinges, handles, benches, chairs, tables, shelves, floor lines, wall planes, and perspective must be constructed correctly in real-world space. Preserve painterly softness and artistic brushwork, but do not allow impossible object construction, floating hardware, warped furniture, broken architectural logic, or distorted small functional details. If any hardware or structural detail becomes uncertain, simplify it into one clean realistic detail or partially obscure it instead of inventing a distorted form.
+Keep the artwork painterly, hand-painted, and clearly in ByeTension’s oil painting style, not photorealistic. However, all architecture, furniture, and functional objects must be structurally and physically believable.
+Doors, windows, knobs, hinges, handles, benches, chairs, tables, shelves, cabinets, stairs, railings, floor lines, wall planes, garden gates, fences, ledges, and perspective must be constructed correctly in real-world space.
+Preserve painterly softness, muted vintage blur, and artistic brushwork, but do not allow impossible object construction, floating hardware, warped furniture, broken architectural logic, melted objects, or distorted small functional details.
+Soft painterly edges are allowed, but functional objects must not melt, merge, deform, float, disconnect, duplicate, or lose their real-world construction.
+Door hardware must attach to the correct latch side of the door at a natural hand height. Hinges must appear on the correct hinge side when visible. Door panels, window frames, bench legs, table legs, chair legs, shelves, and floor perspective must align naturally.
+If any hardware or structural detail becomes uncertain, simplify it into one clean realistic detail or partially obscure it instead of inventing a distorted form.
+
+Reality Check Before Final Image:
+Before finalizing the image, check that the scene still makes physical sense:
+- doors can actually open
+- knobs and handles attach correctly
+- furniture can stand and support weight
+- windows, frames, hinges, and panels align naturally
+- perspective lines feel believable
+- small functional details are simplified rather than distorted
+- painterly blur does not turn real objects into melted AI shapes
 
 Strict Avoid:
-no people unless the idea clearly requires them, no text, no logo, no watermark, no brand names, no readable signs, no famous landmarks, no exact city skylines, no copied composition, no product photography, no oversized foreground object, no isolated object on blank background, no cluttered tabletop catalog scene, no heavy yellow cast, no sepia filter, no orange tint, no glossy digital look, no floating door knobs, no incorrect hinges, no impossible furniture legs, no warped architecture, no broken perspective, no melted hardware, no physically impossible objects.`,  },
+no people unless the idea clearly requires them, no text, no logo, no watermark, no brand names, no readable signs, no famous landmarks, no exact city skylines, no copied composition, no copied shop style, no product photography, no oversized foreground object, no isolated object on blank background, no cluttered tabletop catalog scene, no heavy yellow cast, no sepia filter, no orange tint, no glossy digital look, no plastic finish, no floating door knobs, no incorrect hinges, no impossible furniture legs, no warped architecture, no broken perspective, no melted hardware, no melted furniture, no deformed windows, no distorted shelves, no physically impossible objects.`,  },
   {
     id: "seo-mockup",
     title: "SEO + Mockup Prompt",
