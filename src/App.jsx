@@ -23,14 +23,38 @@ const quickPrompts = [
     title: "Create Image From Idea",
     tone: "from-amber-500 to-orange-500",
     description: "ใช้หลังเลือกไอเดียแล้ว เอา prompt สั้นจากไอเดียมาใส่ในวงเล็บ",
-    text: `สร้างภาพจากไอเดีย : ()
+    text: `สร้างภาพจากไอเดีย : ([ใส่ English short image idea prompt จากไอเดียที่เลือก])
 ได้เลย (ไม่ต้องคุยอะไรกัน)
-ยึดตามไอเดียทุกอย่าง ทั้ง subject, mood, orientation, color mood, และ color direction ห้ามเปลี่ยนคอนเซปต์เอง ใช้สัดส่วนตามที่แนะนำในไอเดียนั้น no text, no logo, no watermark
-Style: 
-Use ByeTension’s fixed signature heirloom oil painting style for all artworks, so every piece looks cohesive and clearly painted by the same artist. expressive traditional oil painting, confident visible brushstrokes, layered oil paint surface, broken color, scumbled light, dry-brush texture, painterly lost-and-found edges, soft atmospheric blending, rich but muted color mixing, hand-painted surface variation, visible directional brush movement, refined old-world painterly realism, warm natural light, airy peaceful atmosphere, calm decor-friendly composition, elegant retirement lifestyle mood, premium printable wall art, realistic proportions, believable real-world scene, not photorealistic, not digital smooth, not glossy, not plastic, not overly clean AI rendering, not dark, not muddy, not cartoon, not watercolor, not flat illustration 
-------- 
-Premium Texture Style: 
-visible linen canvas weave under layered oil paint, tactile brush ridges, broken pigment deposits, soft palette-knife-like paint variation without extreme thickness, scumbled highlights, dry-brush texture, thick oil pigment embedded into canvas tooth, natural pigment absorption into linen weave, matte museum finish, soft diffused natural light only, no gloss, no reflections, no digital smoothness, no plastic finish, rich painterly surface, fixed composition, no extra elements, no scene change, centered balanced layout`,
+
+ยึดตามไอเดียทุกอย่าง ทั้ง subject, place / memory layer, story hint, mood, orientation, color mood, color direction และ composition control type
+ห้ามเปลี่ยนคอนเซปต์เอง
+ใช้สัดส่วนตามที่แนะนำในไอเดียนั้นเท่านั้น:
+- Portrait 3:4 ถ้าไอเดียระบุ Portrait
+- Landscape 4:3 ถ้าไอเดียระบุ Landscape
+
+Artwork Language:
+Create the image as original ByeTension printable wall art for international Etsy buyers and Western home decor buyers.
+The artwork must feel like a quiet painted memory, not a product-style object study.
+Prioritize place-led / memory-led composition.
+For scenic, garden, travel, seasonal, and retirement concepts, aim for 70–85% place / atmosphere / view and 15–30% subject / story hint.
+If an object appears, keep it readable but not oversized. The object must support the memory, not overpower the place.
+The image should look beautiful framed in a Western home, cottage home, lake house, hallway, bedroom, reading nook, cozy office, or peaceful retirement home.
+
+Visual Language:
+Use ByeTension Muted Vintage Landscape Style — muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, faded cream sky, muted olive, warm beige, soft gray-blue or faded clay accents, quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood.
+NorthPrints-inspired market direction but fully original ByeTension artwork, not copying any existing shop, listing, artist, artwork, product photo, or composition.
+
+Composition:
+centered balanced layout, crop-safe composition, generous safe margins, open airy atmosphere, visible depth, quiet place context, subtle story hint, important details away from edges, suitable for multi-size printable wall art cropping, clear Etsy thumbnail readability within 1 second.
+
+Style:
+Use ByeTension’s fixed signature heirloom oil painting style for all artworks, so every piece looks cohesive and clearly painted by the same artist. soft classic oil painting, restrained impressionist brushwork, soft visible brushstrokes, layered matte oil paint surface, delicate broken color, scumbled light, dry-brush texture, painterly lost-and-found edges, soft atmospheric blending, rich but muted color mixing, hand-painted surface variation, refined old-world painterly realism, warm natural light, airy peaceful atmosphere, calm decor-friendly composition, elegant retirement lifestyle mood, premium printable wall art, realistic proportions, believable real-world scene, not photorealistic, not digital smooth, not glossy, not plastic, not overly clean AI rendering, not dark, not muddy, not cartoon, not watercolor, not flat illustration.
+
+Premium Texture Style:
+visible linen canvas weave under soft layered oil paint, subtle paint ridges, restrained broken pigment deposits, gentle dry-brush texture, soft scumbled highlights, natural pigment absorption into linen weave, matte museum finish, soft diffused natural light only, no gloss, no reflections, no digital smoothness, no plastic finish, quiet premium painterly surface, fixed composition, no extra elements, no scene change, centered balanced layout.
+
+Strict Avoid:
+no people unless the idea clearly requires them, no text, no logo, no watermark, no brand names, no readable signs, no famous landmarks, no exact city skylines, no copied composition, no product photography, no oversized foreground object, no isolated object on blank background, no cluttered tabletop catalog scene, no heavy yellow cast, no sepia filter, no orange tint, no glossy digital look.`,
   },
   {
     id: "seo-mockup",
@@ -198,27 +222,51 @@ function buildPrompt(month, day) {
 Monthly Focus: ${month.focus}
 
 Visual Direction รอบนี้:
-ใช้โหมด ByeTension Muted Vintage Landscape Style / NorthPrints vibe แบบปลอดภัย
-เน้น muted vintage printable wall art, antique countryside mood, low-contrast old-world oil painting feeling, faded cream sky, muted olive, warm beige, soft gray-blue, faded clay accents, quiet heirloom home decor look, airy open composition, simple readable subject, calm premium Etsy wall art mood.
-ห้ามลอกงาน ร้าน ลิสต์ติ้ง ศิลปิน หรือภาพใดโดยตรง ต้องเป็น fully original ByeTension artwork เท่านั้น.
+ใช้ ByeTension Muted Vintage Landscape Style / NorthPrints vibe แบบปลอดภัย — muted vintage printable wall art, antique countryside mood, low contrast, faded cream sky, muted olive, warm beige, soft gray-blue, faded clay accents, airy open composition, simple readable subject, calm premium Etsy wall art mood. ห้ามลอกงาน ร้าน ศิลปิน listing หรือ composition ใด ต้องเป็น original ByeTension artwork เท่านั้น.
+
+Market Direction:
+สร้างไอเดียเพื่อขาย international Etsy buyers / Western home decor buyers โดยเฉพาะ US, UK, Canada, Australia และ Western Europe. ทุกไอเดียต้องอ่านออกใน 1 วินาทีว่า “ภาพนี้ใส่กรอบแล้วแต่งบ้านสวย” เหมาะกับ Western home, cottage home, lake house, hallway, bedroom, reading nook, cozy office, retirement home หรือ peaceful home decor space และมี giftable angle เมื่อเข้ากับภาพจริง
+
+Current Shop Response Signal:
+ใช้เป็นตัวกรองทิศทางเท่านั้น ห้ามคัดลอก: cottage garden scenes, greenhouse memories, Mediterranean courtyard views, olive garden / courtyard mood, sunlit cozy home moments, soft floral place-stories, quiet coastal balcony or terrace views, gentle pet-friendly cottage imagery
+
+Section Balance Rule:
+Seasonal Wall Art ยังน้อยมาก ให้ช่วยเติมในช่วง seasonal launch
+Cottage Garden มีสัญญาณดีแต่ต้องสดใหม่ ไม่ซ้ำโลกเดิม
+Animal & Nature มีเยอะแล้ว ถ้าไม่ได้อยู่ในธีมไม่ต้องฝืน
+Travel Window Views, Retirement Wall Art, Still Life Wall Art ให้เน้น place-led / memory-led variation
 
 ธีม 1-5 ที่ต้องใช้รอบนี้:
 ${themeList}
 
+Theme Interpretation:
+ต้องใช้ธีม 1-5 ให้ครบ โดย 1 ธีม = 1 ไอเดีย และ Best Shop Section ต้องตรงกับ section ของธีมนั้น
+- Still Life ต้องมี place, light, weather, window, porch, garden doorway, cottage home, terrace หรือ travel context ไม่ใช่ isolated object/product shot
+- Seasonal ต้องเป็น muted seasonal memory ไม่ใช่ holiday poster
+- Retirement ต้องเป็น peaceful next-chapter place ไม่ใช่สัญลักษณ์เกษียณตรง ๆ
+- Cottage Garden ต้องเป็น garden / greenhouse / courtyard / botanical / floral place-memory ที่สดใหม่
+- Travel Window Views คือ travel view / destination memory / peaceful scenic escape ไม่จำเป็นต้องมีหน้าต่างเสมอ
+
+Visual Storytelling Balance:
+ให้ prioritize place-led / memory-led artwork มากกว่า object-led ใหญ่กลางภาพ
+โดยส่วนใหญ่ใช้ 70–85% place / atmosphere / view + 15–30% subject / story hint
+Still life ทำได้ แต่ต้องมี place / light / memory cue เสมอ
+
 ขอไอเดีย Wall Art Product Concept Only จำนวน 5 ไอเดีย
-ที่คนซื้อมองเห็นแล้วเข้าใจทันทีว่า “อ๋อ ภาพนี้แต่งบ้านสวย” มีเรื่องเล่า และอารมณ์ศิลปิน
-(อ่าน วิเคราะห์ให้เข้าใจ แล้วค่อยค้นหาไอเดียและอธิบายให้ฟัง)
+ที่คนซื้อมองเห็นแล้วเข้าใจทันทีว่า “อ๋อ ภาพนี้ใส่กรอบแล้วแต่งบ้านสวย”
+ต้องมีเรื่องเล่าแบบ quiet painted memory และมีอารมณ์ศิลปิน
+อ่านชีท วิเคราะห์ของเดิมให้เข้าใจ แล้วค่อยคิดไอเดียใหม่
 
 เงื่อนไข:
-1. ห้ามซ้ำ และห้ามใกล้เคียงกับแนวเดิมในชีท ทั้ง subject, mood, scene, object family, composition, View Type, color mood และ shop section pattern
-2. ห้ามคิดต่อยอดจากของเดิมแบบเปลี่ยนของเล็กน้อย ให้คิดเป็น “โลกใหม่” ของภาพจริง ไม่ใช่ variation ของงานเก่า
-3. ต้องใช้ธีม 1-5 ด้านบนให้ครบ โดย 1 ธีม = 1 ไอเดีย และ Best Shop Section ต้องตรงกับ section ของธีมนั้น
+1. ห้ามซ้ำหรือใกล้เคียงกับแนวเดิมในชีท ทั้ง subject, mood, scene, object family, composition, View Type, color mood และ shop section pattern
+2. ห้ามคิดต่อยอดจากของเดิมแบบเปลี่ยนของเล็กน้อย ให้คิดเป็น “โลกใหม่” ของภาพจริง
+3. ต้องใช้ธีม 1-5 ให้ครบ โดย 1 ธีม = 1 ไอเดีย
 4. ห้ามล็อกภาพตาม planner ล่วงหน้า ให้ GPT คิด subject / scene / object / view type ใหม่หลังอ่านชีทเท่านั้น
 5. ให้ไอเดียทั้ง 5 ภาพหลากหลายมาก ทั้ง subject family, scene family, View Type, orientation, color mood และ composition
-6. ทุกไอเดียต้องเป็น printable wall art ที่ขายบน Etsy ได้จริง เหมาะกับ retirement lifestyle, peaceful home decor, slow living และ calm next chapter
-7. ห้ามทำ SEO, ห้ามทำ mockup prompt, ห้ามสร้างภาพจริง, ห้ามทำไฟล์ดาวน์โหลด
+6. ทุกไอเดียต้องเหมาะกับ international buyers, Western home decor, retirement lifestyle, peaceful home decor, slow living และ calm next chapter
+7. ห้ามทำ SEO, mockup prompt, สร้างภาพจริง หรือไฟล์ดาวน์โหลด
 8. ใน text block ให้ใส่เฉพาะ English image idea prompt สั้น ๆ เท่านั้น ห้ามใส่ Style block หรือ Premium Texture block
-9. ทุกไอเดียต้องเข้ากับ Visual Direction รอบนี้ คือ muted vintage, low contrast, antique printable wall art, simple readable subject, open airy composition และต้องยังคงเป็น original ByeTension artwork ไม่ใช่งานเลียนแบบร้านอื่น
+9. ทุกไอเดียต้องมี Story Hint และ Place / Memory Layer แยกนอก prompt block
 
 ฟอร์แมตต่อไอเดีย:
 [เลข] English Idea Title
@@ -231,6 +279,8 @@ Orientation:
 Color Mood:
 Color Direction:
 Visual Direction:
+Story Hint:
+Place / Memory Layer:
 อธิบายภาพภาษาไทย:
 เหตุผลที่ไม่ซ้ำกับชีท:
 
