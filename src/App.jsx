@@ -23,7 +23,7 @@ const quickPrompts = [
     title: "Create Image From Idea",
     tone: "from-amber-500 to-orange-500",
     description: "ใช้หลังเลือกไอเดียแล้ว เอา prompt สั้นจากไอเดียมาใส่ในวงเล็บ",
-    text: `สร้างภาพจากไอเดีย : ([ใส่ English short image idea prompt จากไอเดียที่เลือก])
+    text: `สร้างภาพจากไอเดีย : ( )
 ได้เลย (ไม่ต้องคุยอะไรกัน)
 
 ยึดตามไอเดียทุกอย่าง ทั้ง subject, place / memory layer, story hint, mood, orientation, color mood, color direction และ composition control type
@@ -53,9 +53,11 @@ Use ByeTension’s fixed signature heirloom oil painting style for all artworks,
 Premium Texture Style:
 visible linen canvas weave under soft layered oil paint, subtle paint ridges, restrained broken pigment deposits, gentle dry-brush texture, soft scumbled highlights, natural pigment absorption into linen weave, matte museum finish, soft diffused natural light only, no gloss, no reflections, no digital smoothness, no plastic finish, quiet premium painterly surface, fixed composition, no extra elements, no scene change, centered balanced layout.
 
+Structural Realism Lock:
+Keep the artwork painterly, hand-painted, and clearly in ByeTension’s oil painting style, not photorealistic. However, all architecture, furniture, and functional objects must be structurally and physically believable. Doors, windows, knobs, hinges, handles, benches, chairs, tables, shelves, floor lines, wall planes, and perspective must be constructed correctly in real-world space. Preserve painterly softness and artistic brushwork, but do not allow impossible object construction, floating hardware, warped furniture, broken architectural logic, or distorted small functional details. If any hardware or structural detail becomes uncertain, simplify it into one clean realistic detail or partially obscure it instead of inventing a distorted form.
+
 Strict Avoid:
-no people unless the idea clearly requires them, no text, no logo, no watermark, no brand names, no readable signs, no famous landmarks, no exact city skylines, no copied composition, no product photography, no oversized foreground object, no isolated object on blank background, no cluttered tabletop catalog scene, no heavy yellow cast, no sepia filter, no orange tint, no glossy digital look.`,
-  },
+no people unless the idea clearly requires them, no text, no logo, no watermark, no brand names, no readable signs, no famous landmarks, no exact city skylines, no copied composition, no product photography, no oversized foreground object, no isolated object on blank background, no cluttered tabletop catalog scene, no heavy yellow cast, no sepia filter, no orange tint, no glossy digital look, no floating door knobs, no incorrect hinges, no impossible furniture legs, no warped architecture, no broken perspective, no melted hardware, no physically impossible objects.`,  },
   {
     id: "seo-mockup",
     title: "SEO + Mockup Prompt",
