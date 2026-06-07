@@ -93,6 +93,27 @@ no people unless required / no text / no logo / no watermark / no brand names / 
 
 อ่านไฟล์ ByeTension_SEO_template ก่อน แล้วใช้รูปแบบในไฟล์นั้นเป็นแม่แบบบังคับเท่านั้น
 
+สำคัญมาก:
+คำอธิบายใน SEO TXT ต้องเขียนแบบ Long-form Etsy Description เต็มตาม ByeTension_SEO_template
+ห้ามเขียนคำอธิบายแบบสั้นหรือ compact description
+
+ในหัวข้อคำอธิบายต้องมีครบ:
+WHAT YOU’LL RECEIVE:
+INCLUDED FILE SIZES:
+DESIGN STYLE:
+PERFECT FOR:
+HOW IT WORKS:
+HOW TO PRINT:
+INSTANT DELIVERY:
+PLEASE NOTE:
+TERMS OF USE:
+COPYRIGHT NOTICE:
+QUESTIONS?
+
+DESIGN STYLE และ PERFECT FOR ใส่ได้เฉพาะภายในหัวข้อคำอธิบายเท่านั้น
+ห้ามแยกออกมาเป็นหัวข้อใหญ่ข้างนอก
+SEO TXT ต้องจบที่ shop section เท่านั้น
+
 วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเลือก Best Shop Section จาก 8 section ของ ByeTension เท่านั้น
 เช็ก Product Code ถัดไปจากชีทจริงก่อนสร้างงานทุกครั้ง ห้ามเดา ห้ามใช้ซ้ำ
 ถ้าอ่านเลขล่าสุดไม่ได้หรือไม่มั่นใจ ให้หยุดและบอกให้ยืนยัน Product Code ก่อน
@@ -104,8 +125,7 @@ no people unless required / no text / no logo / no watermark / no brand names / 
 ห้ามซ้ำแนวเดิมในชีท ทั้ง subject, mood, scene, object family, composition, View Type, Composition Control Type, color mood, shop section pattern, Product Code, mockup room type, frame family, wall/background, display type และ light/shadow pattern
 
 ห้ามอัปเดตชีทจริงอัตโนมัติ
-ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว
-`,  },
+ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว`,  },
   {
     id: "update-sheet",
     title: "Update Idea Log Sheet",
