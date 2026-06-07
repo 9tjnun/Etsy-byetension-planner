@@ -44,14 +44,35 @@ Use ByeTension muted vintage old-world oil painting style — antique countrysid
 Fully original ByeTension artwork only. Do not copy any shop, artist, listing, artwork, product photo, frame layout, title, brand identity, or composition.
 
 Balanced Muted Vintage Color Control:
-Use balanced muted vintage, not yellow vintage.
-Palette: pale neutral cream balanced with soft gray-blue undertones, muted sage shadows, faded olive, taupe stone depth, neutral stone gray, pale blue-gray, and cool cream highlights.
-Warm ivory, weathered beige, faded clay, dusty peach, soft sunlight, or antique warmth may appear only as restrained accents, not as an all-over color cast.
-Keep yellow saturation low.
-Avoid yellow-dominant color, sepia, mustard, orange tint, overly golden haze, all-over beige/yellow wash, and yellowed old photo look.
-Old-world but not old-photo yellow. Antique but not sepia. Warm but not yellow-dominant.
-If the scene has warm sky, warm wall, wheat, sand, dry grass, warm stone, warm wood, cream fabric, beige objects, pale flowers, or sunset light, strengthen soft gray-blue, muted sage, taupe, stone gray, pale blue-gray, or cool cream balance.
+Use balanced muted vintage, not yellow vintage and not cold gray vintage.
+The palette should feel softly warm-neutral and inviting for Western home decor buyers, with pale neutral cream, cool cream highlights, soft gray-blue undertones, muted sage shadows, faded olive, taupe stone depth, neutral stone gray, and pale blue-gray balance.
+
+Warm ivory, weathered beige, faded clay, dusty peach, soft sunlight, or antique warmth may appear as restrained accents in small areas of natural light, flower centers, stone edges, wood edges, distant sky glow, window light, water highlights, or gentle highlights.
+Do not remove warmth completely.
+Keep subtle human warmth in the light while maintaining low yellow saturation.
+
+Avoid yellow-dominant color, sepia, mustard, orange tint, overly golden haze, all-over beige/yellow wash, yellowed old photo look, and cold gray gloomy mood.
+Old-world but not old-photo yellow. Muted but not lifeless. Antique but not sepia. Warm-neutral but not yellow-dominant.
+
+If the scene naturally contains warm sky, warm wall, wheat, sand, dry grass, warm stone, warm wood, cream fabric, beige objects, pale flowers, or sunset light, balance the warmth with soft gray-blue, muted sage, taupe, stone gray, pale blue-gray, or cool cream — but keep a small amount of restrained warm ivory highlight so the artwork still feels inviting, homey, and giftable.
+
 Never let all major planes become warm at the same time.
+Never let all major planes become cold gray at the same time.
+The final image should feel peaceful, premium, softly warm-neutral, and home-decor friendly, not yellow, not sepia, not muddy, not cold, not gloomy, not emotionally sad.
+
+Warm-Neutral Home Decor Guardrail:
+Low yellow saturation does not mean removing warmth completely.
+Keep the artwork balanced muted vintage, but softly warm-neutral and inviting for Western home decor buyers.
+
+Add restrained warm ivory highlights or soft natural warmth only in small areas such as gentle sky glow, flower centers, stone edges, wood edges, window light, water highlights, or soft natural light on the subject.
+
+The final artwork must not become cold gray, gloomy, muddy, lifeless, or emotionally sad.
+Muted vintage should feel peaceful, premium, warm-neutral, livable, and home-decor friendly.
+
+Avoid yellow-dominant color, sepia, mustard, orange tint, overly golden haze, all-over beige/yellow wash, AND also avoid cold gray all-over cast, gloomy gray wash, muddy gray-green wash, lifeless muted palette, sad lonely mood, or completely warmth-free image.
+
+Target feeling:
+quiet morning, soft old-world home decor, warm-neutral vintage, peaceful but not lonely, muted but not dead, antique but still inviting.
 
 Soft Atmospheric Oil Painting Control:
 The artwork should feel like a softly aged old-world oil painting, not a sharp digital render or a photo painted over with texture.
@@ -79,8 +100,13 @@ If a functional detail is uncertain, simplify it or partially obscure it instead
 Reality Check Before Final Image:
 Check that the scene makes physical sense, perspective feels believable, functional details are simplified not distorted, warm areas are color-balanced, the artwork does not look yellow / sepia / orange / mustard / beige overall, the image does not look like a sharp digital render with paint texture added, secondary and distant areas are softer than the main subject, texture feels naturally painted into the artwork, and the final image feels like a quiet soft oil-painted memory.
 
+Also check that the final artwork still feels inviting and livable for home decor. The muted palette must not become too cold, gray, sad, muddy, or lifeless. Keep a restrained warm ivory highlight or soft natural warmth in small areas so the painting feels peaceful and welcoming, not lonely or gloomy.
+
+Final mood check:
+The artwork should feel peaceful and inviting, not sad or cold. Keep a tiny amount of warm ivory or soft natural warmth in the light so the image feels suitable for a cozy Western home, not gloomy or lonely.
+
 Strict Avoid:
-no people unless required / no text / no logo / no watermark / no brand names / no readable signs / no famous landmarks / no exact city skylines / no copied composition / no product photography / no oversized foreground object / no isolated object on blank background / no cluttered tabletop catalog scene / no heavy yellow cast / no sepia filter / no orange tint / no mustard tone / no all-over beige wash / no overly golden haze / no yellowed old photo look / no glossy digital look / no plastic finish / no photorealistic sharpness / no hyper-sharp digital detail / no hard AI outlines / no every-detail-in-focus look / no over-defined leaves / grass / stone / flower petals / wall texture / background details / no paint-over-photo effect / no synthetic crispness / no uniformly sharp foreground and background / no digital illustration sharpness / no AI-rendered clarity / no canvas-filter-on-photo look / no floating door knobs / no incorrect hinges / no impossible furniture legs / no warped architecture / no broken perspective / no melted hardware / no melted furniture / no deformed windows / no distorted shelves / no physically impossible objects.`,
+no people unless required / no text / no logo / no watermark / no brand names / no readable signs / no famous landmarks / no exact city skylines / no copied composition / no product photography / no oversized foreground object / no isolated object on blank background / no cluttered tabletop catalog scene / no heavy yellow cast / no sepia filter / no orange tint / no mustard tone / no all-over beige wash / no overly golden haze / no yellowed old photo look / no cold gray all-over cast / no gloomy gray wash / no lifeless muted palette / no sad lonely mood / no muddy gray-green wash / no completely warmth-free image / no glossy digital look / no plastic finish / no photorealistic sharpness / no hyper-sharp digital detail / no hard AI outlines / no every-detail-in-focus look / no over-defined leaves / grass / stone / flower petals / wall texture / background details / no paint-over-photo effect / no synthetic crispness / no uniformly sharp foreground and background / no digital illustration sharpness / no AI-rendered clarity / no canvas-filter-on-photo look / no floating door knobs / no incorrect hinges / no impossible furniture legs / no warped architecture / no broken perspective / no melted hardware / no melted furniture / no deformed windows / no distorted shelves / no physically impossible objects.`,
   },
   {
     id: "seo-mockup",
