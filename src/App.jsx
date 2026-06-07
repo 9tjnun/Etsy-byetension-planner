@@ -91,25 +91,13 @@ no people unless required / no text / no logo / no watermark / no brand names / 
 
 ใช้ข้อมูลชีทจากรอบแรกในแชทนี้
 
-ก่อนสร้างงาน ต้องเช็ก Product Code ในชีทก่อนทุกครั้ง:
-- อ่านคอลัมน์ Product Code / Shop Section / Artwork Name / SEO Status / Mockup Status
-- วิเคราะห์ภาพก่อนว่าเป็นภาพอะไร แล้วเลือก Best Shop Section จาก 8 section ของ ByeTension เท่านั้น
-- ใช้รหัสตามหมวด:
-RET = Retirement Wall Art
-TRV = Travel Window Views
-CUS = Custom Retirement
-ANM = Animal & Nature Wall Art
-STL = Still Life Wall Art
-GDN = Cottage Garden Wall Art
-SPT = Leisure Sports Wall Art
-SEA = Seasonal Wall Art
-- เช็กเลขล่าสุดของ section นั้นในชีท แล้วใช้เลขถัดไปที่ยังไม่เคยใช้ เช่น GDN-04 → GDN-05
-- ห้ามใช้ Product Code ซ้ำเด็ดขาด
-- ห้ามเดาเลขจากความจำ ถ้าอ่านเลขล่าสุดไม่ได้หรือไม่มั่นใจ ให้หยุดและบอกให้ยืนยัน Product Code ก่อน
-- ใส่ Product Code ในชื่อไฟล์เนม, ชื่อไฟล์ SEO txt, ชื่อไฟล์ Mockup txt และ Sheet Log Note
-- ห้ามใส่ Product Code ใน Etsy title ลูกค้าเห็น เว้นแต่สั่งชัดเจน
+อ่านไฟล์ ByeTension_SEO_template ก่อน แล้วใช้รูปแบบในไฟล์นั้นเป็นแม่แบบบังคับเท่านั้น
 
-วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเหมาะกับกรอบแบบไหน แล้วอธิบายสั้น ๆ
+วิเคราะห์ภาพว่าเป็นภาพอะไรก่อน แล้วเลือก Best Shop Section จาก 8 section ของ ByeTension เท่านั้น
+เช็ก Product Code ถัดไปจากชีทจริงก่อนสร้างงานทุกครั้ง ห้ามเดา ห้ามใช้ซ้ำ
+ถ้าอ่านเลขล่าสุดไม่ได้หรือไม่มั่นใจ ให้หยุดและบอกให้ยืนยัน Product Code ก่อน
+
+วิเคราะห์ว่าเหมาะกับกรอบแบบไหน แล้วอธิบายสั้น ๆ
 
 สร้าง SEO + Mockup Prompt / ส่งเป็น txt แยก 2 ไฟล์ / ห้ามสร้างรูปภาพ
 
@@ -117,8 +105,7 @@ SEA = Seasonal Wall Art
 
 ห้ามอัปเดตชีทจริงอัตโนมัติ
 ส่งมาเป็นไฟล์ให้ดาวน์โหลดเลย ไม่ต้องอธิบายยาว
-`,
-  },
+`,  },
   {
     id: "update-sheet",
     title: "Update Idea Log Sheet",
